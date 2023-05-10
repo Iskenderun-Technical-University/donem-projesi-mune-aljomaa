@@ -50,7 +50,7 @@ namespace market14
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.IndicateFocus = true;
-            this.btnClose.Location = new System.Drawing.Point(858, 3);
+            this.btnClose.Location = new System.Drawing.Point(868, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnClose.Size = new System.Drawing.Size(39, 45);
@@ -105,13 +105,12 @@ namespace market14
             // 
             // ProgressBar1
             // 
-            this.ProgressBar1.BackColor = System.Drawing.Color.White;
             this.ProgressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ProgressBar1.FillColor = System.Drawing.Color.White;
             this.ProgressBar1.Location = new System.Drawing.Point(0, 578);
             this.ProgressBar1.Name = "ProgressBar1";
-            this.ProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ProgressBar1.Size = new System.Drawing.Size(900, 22);
+            this.ProgressBar1.ProgressColor = System.Drawing.Color.DarkOrange;
+            this.ProgressBar1.Size = new System.Drawing.Size(911, 22);
             this.ProgressBar1.TabIndex = 5;
             this.ProgressBar1.Text = "guna2ProgressBar1";
             this.ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -121,7 +120,7 @@ namespace market14
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(911, 600);
             this.Controls.Add(this.ProgressBar1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -130,7 +129,7 @@ namespace market14
             this.Controls.Add(this.btnClose);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "splash";
