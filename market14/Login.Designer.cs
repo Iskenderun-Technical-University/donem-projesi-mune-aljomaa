@@ -29,12 +29,16 @@ namespace market14
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnUser = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.SuspendLayout();
             // 
             // CircleButton1
@@ -65,12 +69,13 @@ namespace market14
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.IndicateFocus = true;
-            this.btnClose.Location = new System.Drawing.Point(981, -2);
+            this.btnClose.Location = new System.Drawing.Point(1037, 1);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnClose.Size = new System.Drawing.Size(39, 45);
             this.btnClose.TabIndex = 1;
             this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -105,12 +110,38 @@ namespace market14
             this.label3.TabIndex = 4;
             this.label3.Text = "powered By pacify Technology";
             // 
+            // btnUser
+            // 
+            this.btnUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnUser.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnUser.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnUser.ImageRotate = 0F;
+            this.btnUser.ImageSize = new System.Drawing.Size(200, 200);
+            this.btnUser.Location = new System.Drawing.Point(612, 130);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnUser.Size = new System.Drawing.Size(201, 236);
+            this.btnUser.TabIndex = 5;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(592, 359);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(257, 31);
+            this.comboBox1.TabIndex = 6;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1020, 749);
+            this.ClientSize = new System.Drawing.Size(1078, 749);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnUser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -135,5 +166,8 @@ namespace market14
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ImageButton btnUser;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
