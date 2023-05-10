@@ -1,0 +1,13 @@
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\bin\Debug\market14.exe
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\bin\Debug\market14.pdb
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\bin\Debug\Guna.Charts.WinForms.dll
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\bin\Debug\Guna.UI2.dll
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.csproj.AssemblyReference.cache
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.Form1.resources
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.Properties.Resources.resources
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.csproj.GenerateResource.cache
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.csproj.CoreCompileInputs.cache
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.csproj.CopyComplete
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.exe
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.pdb
+C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\obj\Debug\market14.Login.resources
