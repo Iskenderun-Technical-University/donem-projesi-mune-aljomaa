@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace market14
 {
@@ -15,6 +16,7 @@ namespace market14
         {
             InitializeComponent();
         }
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem - projesi - mune - aljomaa\market14\SMMSD.mdf;Integrated Security=True");
 
         private void txtpassword_OnValueChanged(object sender, EventArgs e)
         {
@@ -54,6 +56,42 @@ namespace market14
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void populate()
+        {
+            Con.Open();
+            string query = "select * from CategoriesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CategoriesDGV.DataSource = ds.Tables[0];
+            Con.Close();
+
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Con.Open();
+                string query = "insert into CategoriesTbl values(" + txtCategoryID.Text + ",'" + txtCategoryNAME.Text + "','" + txtCategoryDescription.Text + "')";
+                SqlCommand cmd = new SqlCommand (query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Category Added Successfully");
+                Con.Close();
+                populate();
+                txtCategoryID.Text = "";
+                txtCategoryNAME.Text = "";
+                txtCategoryDescription.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        
         }
     }
 }
