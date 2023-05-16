@@ -121,12 +121,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SMMSD.mdf">
+    <Content Include="SMMSMD.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="SMMSD_log.ldf">
+    <Content Include="SMMSMD_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>SMMSD.mdf</DependentUpon>
+      <DependentUpon>SMMSMD.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
