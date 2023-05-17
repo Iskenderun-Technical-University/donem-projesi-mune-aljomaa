@@ -40,7 +40,9 @@ namespace market14
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            txtCategoryID.Text = CategoriesDGV.SelectedRows[0].Cells[0].Value.ToString();
+            txtCategoryNAME.Text = CategoriesDGV.SelectedRows[0].Cells[1].Value.ToString();
+            txtCategoryDescription.Text = CategoriesDGV.SelectedRows[0].Cells[2].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -77,7 +79,7 @@ namespace market14
             {
                 Con.Open();
                 string query = "insert into CategoriesTbl values(" + txtCategoryID.Text + ",'" + txtCategoryNAME.Text + "','" + txtCategoryDescription.Text + "')";
-                SqlCommand cmd = new SqlCommand (query, Con);
+                SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Category Added Successfully");
                 Con.Close();
@@ -91,7 +93,82 @@ namespace market14
                 MessageBox.Show(ex.Message);
 
             }
-        
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try {
+
+
+                if (txtCategoryID.Text == "" || txtCategoryNAME.Text == "" || txtCategoryDescription.Text == "")
+                {
+                    MessageBox.Show("Missing Information");
+                }
+                else
+                {
+                    Con.Open();
+                    string query = "update CategoriesTbl set CatName='" + txtCategoryNAME.Text + "',CatDesc='" + txtCategoryDescription.Text + "' where CatId=" + txtCategoryID.Text + "";
+                   
+                        SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category has been updated Successfully");
+                    Con.Close();
+                    populate();
+                    txtCategoryID.Text = "";
+                    txtCategoryNAME.Text = "";
+                    txtCategoryDescription.Text = "";
+                } }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            } } 
+
+        private void Category_form_Load(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (txtCategoryID.Text == "")
+                {
+                    MessageBox.Show("Select Category Id to Delete");
+                }
+                else
+                {
+                    Con.Open();
+                    string query = "delete from CategoriesTbl where CatId=" + txtCategoryID.Text + "";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category has been deleted successfully");
+                    Con.Close();
+                    populate();
+                    txtCategoryID.Text = "";
+                    txtCategoryNAME.Text = "";
+                    txtCategoryDescription.Text = "";
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }
