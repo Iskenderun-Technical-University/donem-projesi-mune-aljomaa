@@ -41,37 +41,37 @@ namespace market14
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.cbSearchCategory = new System.Windows.Forms.ComboBox();
+            this.cbSelectCategory = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.buntxtProductPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label6 = new System.Windows.Forms.Label();
             this.ProductsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.txtCategoryDescription = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtCategoryNAME = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtProductQuantily = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtCtxtProductName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtCategoryID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtProductID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbSelectCategory = new System.Windows.Forms.ComboBox();
-            this.cbSearchCategory = new System.Windows.Forms.ComboBox();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogo
             // 
-            this.btnLogo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLogo.BackColor = System.Drawing.Color.Transparent;
             this.btnLogo.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnLogo.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnLogo.Image = ((System.Drawing.Image)(resources.GetObject("btnLogo.Image")));
             this.btnLogo.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnLogo.ImageRotate = 0F;
-            this.btnLogo.ImageSize = new System.Drawing.Size(150, 150);
-            this.btnLogo.Location = new System.Drawing.Point(-1, 3);
+            this.btnLogo.ImageSize = new System.Drawing.Size(100, 100);
+            this.btnLogo.Location = new System.Drawing.Point(12, 3);
             this.btnLogo.Name = "btnLogo";
             this.btnLogo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnLogo.Size = new System.Drawing.Size(116, 112);
@@ -164,23 +164,104 @@ namespace market14
             this.panel1.Controls.Add(this.cbSearchCategory);
             this.panel1.Controls.Add(this.cbSelectCategory);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel1.Controls.Add(this.buntxtProductPrice);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.ProductsDGV);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.txtCategoryDescription);
-            this.panel1.Controls.Add(this.txtCategoryNAME);
+            this.panel1.Controls.Add(this.txtProductQuantily);
+            this.panel1.Controls.Add(this.txtCtxtProductName);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtCategoryID);
+            this.panel1.Controls.Add(this.txtProductID);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(174, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1112, 703);
             this.panel1.TabIndex = 9;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.White;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btnRefresh.Location = new System.Drawing.Point(917, 24);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(126, 33);
+            this.btnRefresh.TabIndex = 25;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            // 
+            // cbSearchCategory
+            // 
+            this.cbSearchCategory.BackColor = System.Drawing.Color.White;
+            this.cbSearchCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbSearchCategory.ForeColor = System.Drawing.Color.DarkOrange;
+            this.cbSearchCategory.FormattingEnabled = true;
+            this.cbSearchCategory.Location = new System.Drawing.Point(713, 24);
+            this.cbSearchCategory.Name = "cbSearchCategory";
+            this.cbSearchCategory.Size = new System.Drawing.Size(198, 31);
+            this.cbSearchCategory.TabIndex = 24;
+            this.cbSearchCategory.Text = "Select Category";
+            // 
+            // cbSelectCategory
+            // 
+            this.cbSelectCategory.BackColor = System.Drawing.Color.White;
+            this.cbSelectCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbSelectCategory.ForeColor = System.Drawing.Color.DarkOrange;
+            this.cbSelectCategory.FormattingEnabled = true;
+            this.cbSelectCategory.Location = new System.Drawing.Point(155, 308);
+            this.cbSelectCategory.Name = "cbSelectCategory";
+            this.cbSelectCategory.Size = new System.Drawing.Size(264, 31);
+            this.cbSelectCategory.TabIndex = 23;
+            this.cbSelectCategory.Text = "Select Category";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.DarkOrange;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(33, 308);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 23);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Category";
+            // 
+            // buntxtProductPrice
+            // 
+            this.buntxtProductPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.buntxtProductPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buntxtProductPrice.ForeColor = System.Drawing.Color.White;
+            this.buntxtProductPrice.HintForeColor = System.Drawing.Color.Black;
+            this.buntxtProductPrice.HintText = "";
+            this.buntxtProductPrice.isPassword = false;
+            this.buntxtProductPrice.LineFocusedColor = System.Drawing.Color.Blue;
+            this.buntxtProductPrice.LineIdleColor = System.Drawing.Color.White;
+            this.buntxtProductPrice.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.buntxtProductPrice.LineThickness = 3;
+            this.buntxtProductPrice.Location = new System.Drawing.Point(155, 237);
+            this.buntxtProductPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.buntxtProductPrice.Name = "buntxtProductPrice";
+            this.buntxtProductPrice.Size = new System.Drawing.Size(264, 30);
+            this.buntxtProductPrice.TabIndex = 20;
+            this.buntxtProductPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.DarkOrange;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(55, 244);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 23);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Price";
             // 
             // ProductsDGV
             // 
@@ -240,7 +321,7 @@ namespace market14
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDelete.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnDelete.Location = new System.Drawing.Point(240, 367);
+            this.btnDelete.Location = new System.Drawing.Point(292, 367);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(90, 37);
             this.btnDelete.TabIndex = 16;
@@ -254,12 +335,13 @@ namespace market14
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUpdate.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnUpdate.Location = new System.Drawing.Point(144, 367);
+            this.btnUpdate.Location = new System.Drawing.Point(186, 367);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(90, 37);
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -268,50 +350,50 @@ namespace market14
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAdd.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnAdd.Location = new System.Drawing.Point(48, 367);
+            this.btnAdd.Location = new System.Drawing.Point(73, 367);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(90, 37);
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // txtCategoryDescription
+            // txtProductQuantily
             // 
-            this.txtCategoryDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryDescription.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryDescription.ForeColor = System.Drawing.Color.White;
-            this.txtCategoryDescription.HintForeColor = System.Drawing.Color.Black;
-            this.txtCategoryDescription.HintText = "";
-            this.txtCategoryDescription.isPassword = false;
-            this.txtCategoryDescription.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtCategoryDescription.LineIdleColor = System.Drawing.Color.White;
-            this.txtCategoryDescription.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtCategoryDescription.LineThickness = 3;
-            this.txtCategoryDescription.Location = new System.Drawing.Point(155, 162);
-            this.txtCategoryDescription.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCategoryDescription.Name = "txtCategoryDescription";
-            this.txtCategoryDescription.Size = new System.Drawing.Size(264, 30);
-            this.txtCategoryDescription.TabIndex = 13;
-            this.txtCategoryDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtProductQuantily.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductQuantily.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtProductQuantily.ForeColor = System.Drawing.Color.White;
+            this.txtProductQuantily.HintForeColor = System.Drawing.Color.Black;
+            this.txtProductQuantily.HintText = "";
+            this.txtProductQuantily.isPassword = false;
+            this.txtProductQuantily.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtProductQuantily.LineIdleColor = System.Drawing.Color.White;
+            this.txtProductQuantily.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtProductQuantily.LineThickness = 3;
+            this.txtProductQuantily.Location = new System.Drawing.Point(155, 162);
+            this.txtProductQuantily.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProductQuantily.Name = "txtProductQuantily";
+            this.txtProductQuantily.Size = new System.Drawing.Size(264, 30);
+            this.txtProductQuantily.TabIndex = 13;
+            this.txtProductQuantily.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtCategoryNAME
+            // txtCtxtProductName
             // 
-            this.txtCategoryNAME.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryNAME.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryNAME.ForeColor = System.Drawing.Color.White;
-            this.txtCategoryNAME.HintForeColor = System.Drawing.Color.Black;
-            this.txtCategoryNAME.HintText = "";
-            this.txtCategoryNAME.isPassword = false;
-            this.txtCategoryNAME.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtCategoryNAME.LineIdleColor = System.Drawing.Color.White;
-            this.txtCategoryNAME.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtCategoryNAME.LineThickness = 3;
-            this.txtCategoryNAME.Location = new System.Drawing.Point(155, 114);
-            this.txtCategoryNAME.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCategoryNAME.Name = "txtCategoryNAME";
-            this.txtCategoryNAME.Size = new System.Drawing.Size(264, 30);
-            this.txtCategoryNAME.TabIndex = 12;
-            this.txtCategoryNAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCtxtProductName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCtxtProductName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCtxtProductName.ForeColor = System.Drawing.Color.White;
+            this.txtCtxtProductName.HintForeColor = System.Drawing.Color.Black;
+            this.txtCtxtProductName.HintText = "";
+            this.txtCtxtProductName.isPassword = false;
+            this.txtCtxtProductName.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtCtxtProductName.LineIdleColor = System.Drawing.Color.White;
+            this.txtCtxtProductName.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtCtxtProductName.LineThickness = 3;
+            this.txtCtxtProductName.Location = new System.Drawing.Point(155, 114);
+            this.txtCtxtProductName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCtxtProductName.Name = "txtCtxtProductName";
+            this.txtCtxtProductName.Size = new System.Drawing.Size(264, 30);
+            this.txtCtxtProductName.TabIndex = 12;
+            this.txtCtxtProductName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
             // 
@@ -337,24 +419,24 @@ namespace market14
             this.label4.TabIndex = 10;
             this.label4.Text = "Name";
             // 
-            // txtCategoryID
+            // txtProductID
             // 
-            this.txtCategoryID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryID.ForeColor = System.Drawing.Color.White;
-            this.txtCategoryID.HintForeColor = System.Drawing.Color.Black;
-            this.txtCategoryID.HintText = "";
-            this.txtCategoryID.isPassword = false;
-            this.txtCategoryID.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtCategoryID.LineIdleColor = System.Drawing.Color.White;
-            this.txtCategoryID.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtCategoryID.LineThickness = 3;
-            this.txtCategoryID.Location = new System.Drawing.Point(155, 76);
-            this.txtCategoryID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCategoryID.Name = "txtCategoryID";
-            this.txtCategoryID.Size = new System.Drawing.Size(264, 30);
-            this.txtCategoryID.TabIndex = 9;
-            this.txtCategoryID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtProductID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtProductID.ForeColor = System.Drawing.Color.White;
+            this.txtProductID.HintForeColor = System.Drawing.Color.Black;
+            this.txtProductID.HintText = "";
+            this.txtProductID.isPassword = false;
+            this.txtProductID.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtProductID.LineIdleColor = System.Drawing.Color.White;
+            this.txtProductID.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtProductID.LineThickness = 3;
+            this.txtProductID.Location = new System.Drawing.Point(155, 76);
+            this.txtProductID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(264, 30);
+            this.txtProductID.TabIndex = 9;
+            this.txtProductID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -380,87 +462,6 @@ namespace market14
             this.label2.TabIndex = 4;
             this.label2.Text = "Manage products";
             // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Black;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(155, 227);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(264, 30);
-            this.bunifuMaterialTextbox1.TabIndex = 20;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.DarkOrange;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(55, 244);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 23);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Price";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DarkOrange;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(33, 308);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 23);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Category";
-            // 
-            // cbSelectCategory
-            // 
-            this.cbSelectCategory.BackColor = System.Drawing.Color.White;
-            this.cbSelectCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cbSelectCategory.ForeColor = System.Drawing.Color.DarkOrange;
-            this.cbSelectCategory.FormattingEnabled = true;
-            this.cbSelectCategory.Location = new System.Drawing.Point(155, 308);
-            this.cbSelectCategory.Name = "cbSelectCategory";
-            this.cbSelectCategory.Size = new System.Drawing.Size(264, 31);
-            this.cbSelectCategory.TabIndex = 23;
-            this.cbSelectCategory.Text = "Select Category";
-            // 
-            // cbSearchCategory
-            // 
-            this.cbSearchCategory.BackColor = System.Drawing.Color.White;
-            this.cbSearchCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cbSearchCategory.ForeColor = System.Drawing.Color.DarkOrange;
-            this.cbSearchCategory.FormattingEnabled = true;
-            this.cbSearchCategory.Location = new System.Drawing.Point(713, 24);
-            this.cbSearchCategory.Name = "cbSearchCategory";
-            this.cbSearchCategory.Size = new System.Drawing.Size(198, 31);
-            this.cbSearchCategory.TabIndex = 24;
-            this.cbSearchCategory.Text = "Select Category";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.White;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnRefresh.Location = new System.Drawing.Point(917, 24);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(126, 33);
-            this.btnRefresh.TabIndex = 25;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            // 
             // Product_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -477,7 +478,7 @@ namespace market14
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Product_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product_Form";
@@ -503,15 +504,15 @@ namespace market14
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCategoryDescription;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCategoryNAME;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtProductQuantily;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCtxtProductName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCategoryID;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtProductID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox buntxtProductPrice;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.ComboBox cbSearchCategory;
