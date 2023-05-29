@@ -144,6 +144,7 @@ namespace market14
             this.btnClose.Size = new System.Drawing.Size(39, 38);
             this.btnClose.TabIndex = 12;
             this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -313,6 +314,7 @@ namespace market14
             this.ProductsDGV.ThemeStyle.RowsStyle.Height = 24;
             this.ProductsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ProductsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ProductsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDGV_CellContentClick);
             // 
             // btnDelete
             // 
@@ -356,6 +358,7 @@ namespace market14
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductQuantily
             // 
@@ -482,6 +485,7 @@ namespace market14
             this.Name = "Product_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product_Form";
+            this.Load += new System.EventHandler(this.Product_Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDGV)).EndInit();

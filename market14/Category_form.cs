@@ -170,5 +170,37 @@ namespace market14
             Login login = new Login();
             login.Show();
         }
+        private void btnSellers_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            Product_Form prod = new Product_Form();
+            prod.Show();
+            this.Hide();
+        }
+        private void btnSellers_Click(object sender, EventArgs e)
+        {
+            Seller_Form Sell = new Seller_Form();
+            Sell.Show();
+            this.Hide();
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            Product_Form prod = new Product_Form();
+            prod.Show();
+            this.Hide();
+        }
+
+        private void btnSelling_Click(object sender, EventArgs e)
+        {
+            Selling_form sell = new Selling_form();
+            sell.Show();
+            this.Hide();
+        }
     }
+  
 }

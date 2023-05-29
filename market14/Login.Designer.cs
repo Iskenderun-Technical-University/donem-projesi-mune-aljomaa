@@ -135,7 +135,7 @@ namespace market14
             // 
             this.cbSelectRole.BackColor = System.Drawing.Color.White;
             this.cbSelectRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cbSelectRole.ForeColor = System.Drawing.Color.Blue;
+            this.cbSelectRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.cbSelectRole.FormattingEnabled = true;
             this.cbSelectRole.Items.AddRange(new object[] {
             "Admin",
@@ -151,7 +151,7 @@ namespace market14
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUsername.ForeColor = System.Drawing.Color.DarkOrange;
-            this.txtUsername.HintForeColor = System.Drawing.Color.Blue;
+            this.txtUsername.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtUsername.HintText = "Enter Username";
             this.txtUsername.isPassword = false;
             this.txtUsername.LineFocusedColor = System.Drawing.Color.Blue;
@@ -170,7 +170,7 @@ namespace market14
             this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtpassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtpassword.ForeColor = System.Drawing.Color.DarkOrange;
-            this.txtpassword.HintForeColor = System.Drawing.Color.Blue;
+            this.txtpassword.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtpassword.HintText = "Enter password";
             this.txtpassword.isPassword = false;
             this.txtpassword.LineFocusedColor = System.Drawing.Color.Blue;
