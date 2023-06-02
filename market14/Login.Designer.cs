@@ -208,6 +208,7 @@ namespace market14
             this.btnLogin.Size = new System.Drawing.Size(167, 48);
             this.btnLogin.TabIndex = 9;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnReset
             // 
@@ -233,6 +234,7 @@ namespace market14
             this.btnReset.Size = new System.Drawing.Size(167, 48);
             this.btnReset.TabIndex = 10;
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Login
             // 
@@ -258,6 +260,7 @@ namespace market14
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.TransparencyKey = System.Drawing.Color.Blue;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -15,7 +15,7 @@ namespace market14
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Category_form());
+            Application.Run(new Form1());
         }
     }
 }

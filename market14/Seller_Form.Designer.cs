@@ -29,11 +29,12 @@ namespace market14
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Seller_Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSellerPossword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSellerMobileNo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@ namespace market14
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.txtSellerPossword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SellersDGV)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,26 @@ namespace market14
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1131, 706);
             this.panel1.TabIndex = 10;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtSellerPossword
+            // 
+            this.txtSellerPossword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSellerPossword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSellerPossword.ForeColor = System.Drawing.Color.White;
+            this.txtSellerPossword.HintForeColor = System.Drawing.Color.Black;
+            this.txtSellerPossword.HintText = "";
+            this.txtSellerPossword.isPassword = false;
+            this.txtSellerPossword.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtSellerPossword.LineIdleColor = System.Drawing.Color.White;
+            this.txtSellerPossword.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtSellerPossword.LineThickness = 3;
+            this.txtSellerPossword.Location = new System.Drawing.Point(161, 304);
+            this.txtSellerPossword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSellerPossword.Name = "txtSellerPossword";
+            this.txtSellerPossword.Size = new System.Drawing.Size(264, 30);
+            this.txtSellerPossword.TabIndex = 22;
+            this.txtSellerPossword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label7
             // 
@@ -129,25 +149,25 @@ namespace market14
             // 
             // SellersDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.SellersDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SellersDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            this.SellersDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SellersDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.SellersDGV.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Coral;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SellersDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Coral;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SellersDGV.DefaultCellStyle = dataGridViewCellStyle27;
             this.SellersDGV.GridColor = System.Drawing.Color.Chocolate;
             this.SellersDGV.Location = new System.Drawing.Point(449, 63);
             this.SellersDGV.Name = "SellersDGV";
@@ -191,6 +211,7 @@ namespace market14
             this.btnDelete.TabIndex = 16;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -205,6 +226,7 @@ namespace market14
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -219,6 +241,7 @@ namespace market14
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtSellerAge
             // 
@@ -365,6 +388,7 @@ namespace market14
             this.btnSelling.TabIndex = 19;
             this.btnSelling.Text = "Selling";
             this.btnSelling.UseVisualStyleBackColor = true;
+            this.btnSelling.Click += new System.EventHandler(this.btnSelling_Click);
             // 
             // btnCategories
             // 
@@ -378,6 +402,7 @@ namespace market14
             this.btnCategories.TabIndex = 20;
             this.btnCategories.Text = "Categories";
             this.btnCategories.UseVisualStyleBackColor = true;
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
             // btnProducts
             // 
@@ -391,6 +416,7 @@ namespace market14
             this.btnProducts.TabIndex = 18;
             this.btnProducts.Text = "Products";
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnLogout
             // 
@@ -404,6 +430,7 @@ namespace market14
             this.btnLogout.TabIndex = 21;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnClose
             // 
@@ -421,25 +448,6 @@ namespace market14
             this.btnClose.TabIndex = 22;
             this.btnClose.UseTransparentBackground = true;
             // 
-            // txtSellerPossword
-            // 
-            this.txtSellerPossword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSellerPossword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSellerPossword.ForeColor = System.Drawing.Color.White;
-            this.txtSellerPossword.HintForeColor = System.Drawing.Color.Black;
-            this.txtSellerPossword.HintText = "";
-            this.txtSellerPossword.isPassword = false;
-            this.txtSellerPossword.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtSellerPossword.LineIdleColor = System.Drawing.Color.White;
-            this.txtSellerPossword.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtSellerPossword.LineThickness = 3;
-            this.txtSellerPossword.Location = new System.Drawing.Point(161, 304);
-            this.txtSellerPossword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSellerPossword.Name = "txtSellerPossword";
-            this.txtSellerPossword.Size = new System.Drawing.Size(264, 30);
-            this.txtSellerPossword.TabIndex = 22;
-            this.txtSellerPossword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // Seller_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -456,10 +464,11 @@ namespace market14
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Seller_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seller_Form";
+            this.Load += new System.EventHandler(this.Seller_Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SellersDGV)).EndInit();
