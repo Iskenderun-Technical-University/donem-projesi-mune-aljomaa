@@ -60,10 +60,10 @@ namespace market14
 
         private void Selling_form_Load(object sender, EventArgs e)
         {
-            populate();
+           /* populate();
             populatebills();
             FillCategory();
-            lblSellerName.Text = Login.Sellername;
+            lblSellerName.Text = Login.Sellername;*/
         }
 
         private void btnAddProct_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace market14
              OrdersDGV.Rows.Add(newRow);
             n++;
            Grdtotal = Grdtotal total;
-        lblAmount.Text = "" + Grdtotal;
+        lblAmount.Text ="" + Grdtotal;
         }
 
         private void ProdDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
