@@ -73,12 +73,12 @@ namespace market14
                 else
                 {
                     Con.Open();
-                    string query = "update SellersTbl set SellerName='" + txtSellerName.Text + "'SellerAge =" + txtSellerAge.Text + "SellerMobileNo=" + txtSellerMobileNo.Text + "SellerPossword='" + txtSellerPossword.SelectedValue.ToString() + "'where ProdId=" + txtSellerID.Text + ";";
+                    string query = "update SellersTbl set SellerName='" + txtSellerName.Text + "' , sellerAge =" + txtSellerAge.Text + ", sellerMobileNo=" + txtSellerMobileNo.Text + ", sellerPossword='" + txtSellerPossword.Text.ToString() + "'where ProdId=" + txtSellerID.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Successfully Updated");
                     Con.Close();
-                    //populate();
+                    populate();
                     txtSellerID.Text = "";
                     txtSellerName.Text = "";
                     txtSellerAge.Text = "";
@@ -146,7 +146,7 @@ namespace market14
 
         private void btnSelling_Click(object sender, EventArgs e)
         {
-            Selling_form sell = new Selling_form();
+            Selling_Form sell = new Selling_Form();
             sell.Show();
             this.Hide();
         }
@@ -160,7 +160,7 @@ namespace market14
 
         private void btnCategories_Click(object sender, EventArgs e)
         {
-            Category_form Cat = new Category_form();
+            Category_Form Cat = new Category_Form();
             Cat.Show();
             this.Hide();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace market14
 {
-    partial class Category_form
+    partial class Category_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@ namespace market14
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category_form));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category_Form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.CategoriesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -78,25 +78,25 @@ namespace market14
             // 
             // CategoriesDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.CategoriesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CategoriesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.CategoriesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CategoriesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.CategoriesDGV.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Coral;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CategoriesDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Coral;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CategoriesDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.CategoriesDGV.GridColor = System.Drawing.Color.Chocolate;
             this.CategoriesDGV.Location = new System.Drawing.Point(444, 61);
             this.CategoriesDGV.Name = "CategoriesDGV";
@@ -114,14 +114,14 @@ namespace market14
             this.CategoriesDGV.ThemeStyle.GridColor = System.Drawing.Color.Chocolate;
             this.CategoriesDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.CategoriesDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.CategoriesDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CategoriesDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CategoriesDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.CategoriesDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.CategoriesDGV.ThemeStyle.HeaderStyle.Height = 30;
             this.CategoriesDGV.ThemeStyle.ReadOnly = false;
             this.CategoriesDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.CategoriesDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.CategoriesDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CategoriesDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CategoriesDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Coral;
             this.CategoriesDGV.ThemeStyle.RowsStyle.Height = 24;
             this.CategoriesDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -133,9 +133,9 @@ namespace market14
             this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDelete.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btnDelete.Location = new System.Drawing.Point(253, 225);
+            this.btnDelete.Location = new System.Drawing.Point(264, 225);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(90, 37);
             this.btnDelete.TabIndex = 16;
@@ -148,7 +148,7 @@ namespace market14
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUpdate.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnUpdate.Location = new System.Drawing.Point(155, 225);
             this.btnUpdate.Name = "btnUpdate";
@@ -163,7 +163,7 @@ namespace market14
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAdd.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnAdd.Location = new System.Drawing.Point(43, 225);
             this.btnAdd.Name = "btnAdd";
@@ -176,7 +176,7 @@ namespace market14
             // txtCategoryDescription
             // 
             this.txtCategoryDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryDescription.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCategoryDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtCategoryDescription.ForeColor = System.Drawing.Color.White;
             this.txtCategoryDescription.HintForeColor = System.Drawing.Color.Black;
             this.txtCategoryDescription.HintText = "";
@@ -195,7 +195,7 @@ namespace market14
             // txtCategoryNAME
             // 
             this.txtCategoryNAME.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryNAME.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCategoryNAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtCategoryNAME.ForeColor = System.Drawing.Color.White;
             this.txtCategoryNAME.HintForeColor = System.Drawing.Color.Black;
             this.txtCategoryNAME.HintText = "";
@@ -210,17 +210,16 @@ namespace market14
             this.txtCategoryNAME.Size = new System.Drawing.Size(264, 30);
             this.txtCategoryNAME.TabIndex = 12;
             this.txtCategoryNAME.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCategoryNAME.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DarkOrange;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(14, 169);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 23);
+            this.label5.Size = new System.Drawing.Size(100, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "Description";
             // 
@@ -228,19 +227,18 @@ namespace market14
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.DarkOrange;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(33, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 23);
+            this.label4.Size = new System.Drawing.Size(55, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Name";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtCategoryID
             // 
             this.txtCategoryID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCategoryID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtCategoryID.ForeColor = System.Drawing.Color.White;
             this.txtCategoryID.HintForeColor = System.Drawing.Color.Black;
             this.txtCategoryID.HintText = "";
@@ -255,30 +253,28 @@ namespace market14
             this.txtCategoryID.Size = new System.Drawing.Size(264, 30);
             this.txtCategoryID.TabIndex = 9;
             this.txtCategoryID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCategoryID.OnValueChanged += new System.EventHandler(this.txtpassword_OnValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DarkOrange;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(55, 83);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 23);
+            this.label3.Size = new System.Drawing.Size(28, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "ID\r\n";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DarkOrange;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(463, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 34);
+            this.label2.Size = new System.Drawing.Size(218, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Manage Categories";
             // 
@@ -286,11 +282,11 @@ namespace market14
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
             this.label1.Location = new System.Drawing.Point(491, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(481, 34);
+            this.label1.Size = new System.Drawing.Size(379, 26);
             this.label1.TabIndex = 3;
             this.label1.Text = "Supermarket Management System";
             // 
@@ -315,7 +311,7 @@ namespace market14
             // 
             this.btnSellers.FlatAppearance.BorderSize = 0;
             this.btnSellers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSellers.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSellers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSellers.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnSellers.Location = new System.Drawing.Point(32, 171);
             this.btnSellers.Name = "btnSellers";
@@ -323,13 +319,13 @@ namespace market14
             this.btnSellers.TabIndex = 5;
             this.btnSellers.Text = "Sellers";
             this.btnSellers.UseVisualStyleBackColor = true;
-            this.btnSellers.Click += new System.EventHandler(this.button1_Click);
+            this.btnSellers.Click += new System.EventHandler(this.btnSellers_Click);
             // 
             // btnProducts
             // 
             this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnProducts.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnProducts.Location = new System.Drawing.Point(32, 211);
             this.btnProducts.Name = "btnProducts";
@@ -337,13 +333,13 @@ namespace market14
             this.btnProducts.TabIndex = 6;
             this.btnProducts.Text = "products";
             this.btnProducts.UseVisualStyleBackColor = true;
-            this.btnProducts.Click += new System.EventHandler(this.button2_Click);
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnSelling
             // 
             this.btnSelling.FlatAppearance.BorderSize = 0;
             this.btnSelling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelling.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSelling.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSelling.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnSelling.Location = new System.Drawing.Point(32, 251);
             this.btnSelling.Name = "btnSelling";
@@ -357,7 +353,7 @@ namespace market14
             // 
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLogout.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnLogout.Location = new System.Drawing.Point(32, 725);
             this.btnLogout.Name = "btnLogout";
@@ -382,9 +378,9 @@ namespace market14
             this.btnLogo.Size = new System.Drawing.Size(116, 112);
             this.btnLogo.TabIndex = 8;
             // 
-            // Category_form
+            // Category_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1312, 791);
@@ -396,11 +392,11 @@ namespace market14
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Category_form";
+            this.Name = "Category_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Category_form";
             this.Load += new System.EventHandler(this.Category_form_Load);

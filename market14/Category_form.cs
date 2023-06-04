@@ -10,33 +10,13 @@ using System.Data.SqlClient;
 
 namespace market14
 {
-    public partial class Category_form : Form
+    public partial class Category_Form : Form
     {
-        public Category_form()
+        public Category_Form()
         {
             InitializeComponent();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\SMMSMD.mdf';Integrated Security=True");
-
-        private void txtpassword_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -45,15 +25,6 @@ namespace market14
             txtCategoryDescription.Text = CategoriesDGV.SelectedRows[0].Cells[2].Value.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -186,8 +157,15 @@ namespace market14
 
         private void btnSelling_Click(object sender, EventArgs e)
         {
-            Selling_form sell = new Selling_form();
+            Selling_Form sell = new Selling_Form();
             sell.Show();
+            this.Hide();
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            Category_Form Cat = new Category_Form();
+            Cat.Show();
             this.Hide();
         }
     }

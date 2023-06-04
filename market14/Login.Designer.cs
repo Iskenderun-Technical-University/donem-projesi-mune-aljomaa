@@ -40,7 +40,7 @@ namespace market14
             this.cbSelectRole = new System.Windows.Forms.ComboBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtpassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnReset = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SuspendLayout();
@@ -54,7 +54,7 @@ namespace market14
             this.CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.CircleButton1.FocusedColor = System.Drawing.Color.AliceBlue;
-            this.CircleButton1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CircleButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CircleButton1.ForeColor = System.Drawing.Color.White;
             this.CircleButton1.Location = new System.Drawing.Point(-459, -68);
             this.CircleButton1.Name = "CircleButton1";
@@ -85,35 +85,35 @@ namespace market14
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
             this.label1.Location = new System.Drawing.Point(432, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(481, 34);
+            this.label1.Size = new System.Drawing.Size(379, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "Supermarket Management System";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(586, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 34);
+            this.label2.Size = new System.Drawing.Size(135, 26);
             this.label2.TabIndex = 3;
             this.label2.Text = "Login panel";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(536, 633);
+            this.label3.Location = new System.Drawing.Point(614, 648);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(436, 34);
+            this.label3.Size = new System.Drawing.Size(319, 26);
             this.label3.TabIndex = 4;
-            this.label3.Text = "powered By pacify Technology";
+            this.label3.Text = "Developed By Mune Aljomaa";
             // 
             // btnUser
             // 
@@ -134,7 +134,7 @@ namespace market14
             // cbSelectRole
             // 
             this.cbSelectRole.BackColor = System.Drawing.Color.White;
-            this.cbSelectRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbSelectRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cbSelectRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.cbSelectRole.FormattingEnabled = true;
             this.cbSelectRole.Items.AddRange(new object[] {
@@ -142,14 +142,15 @@ namespace market14
             "Seller"});
             this.cbSelectRole.Location = new System.Drawing.Point(592, 359);
             this.cbSelectRole.Name = "cbSelectRole";
-            this.cbSelectRole.Size = new System.Drawing.Size(360, 31);
+            this.cbSelectRole.Size = new System.Drawing.Size(360, 28);
             this.cbSelectRole.TabIndex = 6;
             this.cbSelectRole.Text = "Select Role";
+            this.cbSelectRole.SelectedIndexChanged += new System.EventHandler(this.cbSelectRole_SelectedIndexChanged);
             // 
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUsername.ForeColor = System.Drawing.Color.DarkOrange;
             this.txtUsername.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txtUsername.HintText = "Enter Username";
@@ -165,24 +166,24 @@ namespace market14
             this.txtUsername.TabIndex = 7;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtpassword
+            // txtPassword
             // 
-            this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtpassword.ForeColor = System.Drawing.Color.DarkOrange;
-            this.txtpassword.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txtpassword.HintText = "Enter password";
-            this.txtpassword.isPassword = false;
-            this.txtpassword.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtpassword.LineIdleColor = System.Drawing.Color.DarkOrange;
-            this.txtpassword.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtpassword.LineThickness = 3;
-            this.txtpassword.Location = new System.Drawing.Point(592, 467);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(360, 44);
-            this.txtpassword.TabIndex = 8;
-            this.txtpassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtPassword.ForeColor = System.Drawing.Color.DarkOrange;
+            this.txtPassword.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.txtPassword.HintText = "Enter password";
+            this.txtPassword.isPassword = false;
+            this.txtPassword.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtPassword.LineIdleColor = System.Drawing.Color.DarkOrange;
+            this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtPassword.LineThickness = 3;
+            this.txtPassword.Location = new System.Drawing.Point(592, 467);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(360, 44);
+            this.txtPassword.TabIndex = 8;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnLogin
             // 
@@ -195,7 +196,7 @@ namespace market14
             this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
             this.btnLogin.ButtonText = "Login";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLogin.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnLogin.IdleBorderThickness = 1;
             this.btnLogin.IdleCornerRadius = 20;
@@ -221,7 +222,7 @@ namespace market14
             this.btnReset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReset.BackgroundImage")));
             this.btnReset.ButtonText = "Reset";
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnReset.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnReset.IdleBorderThickness = 1;
             this.btnReset.IdleCornerRadius = 20;
@@ -238,13 +239,13 @@ namespace market14
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1078, 749);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.cbSelectRole);
             this.Controls.Add(this.btnUser);
@@ -253,7 +254,7 @@ namespace market14
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.CircleButton1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
@@ -277,7 +278,7 @@ namespace market14
         private System.Windows.Forms.ComboBox cbSelectRole;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpassword;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
         private Bunifu.Framework.UI.BunifuThinButton2 btnReset;
     }

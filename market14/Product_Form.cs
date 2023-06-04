@@ -17,14 +17,14 @@ namespace market14
             InitializeComponent();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\AL BARAA PC\OneDrive\Masaüstü\donem-projesi-mune-aljomaa\market14\SMMSMD.mdf';Integrated Security=True");
-        
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
             {
                 Con.Open();
-                string query = "insert into ProductsTbl values(" + txtProductID.Text + ",'" + txtCtxtProductName.Text + "'," + txtProductQuantily.Text + "," + buntxtProductPrice.Text + "," + cbSelectCategory.SelectedValue.ToString() + "')";
+                string query = "insert into ProductsTbl values(" + txtProductID.Text + ",'" + txtCtxtProductName.Text + "'," + txtProductQuantily.Text + "," + buntxtProductPrice.Text + ",'" + cbSelectCategory.SelectedValue.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Added successfully");
@@ -54,17 +54,9 @@ namespace market14
             cbSearchCategory.DataSource = dt;
             cbSelectCategory.ValueMember = "CatName";
             cbSelectCategory.DataSource = dt;
-            Con.Close(); }
-        private void pogulate() {
-            Con.Open();
-            string query = "select * from ProductsTbI";
-            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            ProductsDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
+
         private void Product_Form_Load(object sender, EventArgs e)
         {
 
@@ -87,22 +79,22 @@ namespace market14
         }
         private void btnUpdate_click(object sender, EventArgs e)
         {
-           try
- {
+            try
+            {
 
-         if (txtProductID.Text == "" || txtCtxtProductName.Text == "" || txtProductQuantily.Text == "" || buntxtProductPrice.Text == "")
+                if (txtProductID.Text == "" || txtCtxtProductName.Text == "" || txtProductQuantily.Text == "" || buntxtProductPrice.Text == "")
                 {
                     MessageBox.Show("Missing Information");
                 }
-                else 
+                else
                 {
                     Con.Open();
-                    string query = "update ProductsTbi set ProdName='" + txtCtxtProductName.Text + "',prodQtye =" + txtProductQuantily.Text + ",ProdPrice=" + buntxtProductPrice.Text + ",prodcat='" + cbSelectCategory.SelectedValue.ToString() + "'where ProdId=" + txtProductID.Text + ";";
-                         SqlCommand cmd = new SqlCommand (query, Con);
-                    cmd. ExecuteNonQuery ();
-                    MessageBox. Show ("Product Successfully Updated");
-                    Con. Close () ; 
-                    //populate();
+                    string query = "update ProductsTbl set ProdName='" + txtCtxtProductName.Text + "',ProdQty =" + txtProductQuantily.Text + ",ProdPrice=" + buntxtProductPrice.Text + ",ProdCat='" + cbSelectCategory.SelectedValue.ToString() + "'where ProdId=" + txtProductID.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Successfully Updated");
+                    Con.Close();
+                    populate();
                     txtProductID.Text = "";
                     txtCtxtProductName.Text = "";
                     txtProductQuantily.Text = "";
@@ -114,18 +106,18 @@ namespace market14
                 MessageBox.Show(ex.Message);
             }
         }
-        private void btnDelete_CLick (object sender ,EventArgs e)
+        private void btnDelete_CLick(object sender, EventArgs e)
         {
             try
             {
-                if(txtProductID.Text =="")
+                if (txtProductID.Text == "")
                 {
                     MessageBox.Show("Select the product to Delete");
                 }
-                    else
-                { 
-                Con.Open();
-                    string query = "delete from productsTbl where prodld=" + txtProductID.Text + "";
+                else
+                {
+                    Con.Open();
+                    string query = "delete from ProductsTbl where Prodld=" + txtProductID.Text + "";
                     SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("product deleted successfully");
@@ -137,15 +129,15 @@ namespace market14
                     buntxtProductPrice.Text = "";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void cbSearchCategoy_SelectionChangeCommittes(object sender ,EventArgs e)
+        private void cbSearchCategoy_SelectionChangeCommittes(object sender, EventArgs e)
         {
             Con.Open();
-            string query = "select * from ProductsTbl where ProdCat = '" +cbSearchCategory.SelectedValue.ToString()+"'";
+            string query = "select * from ProductsTbl where ProdCat = '" + cbSearchCategory.SelectedValue.ToString() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -158,39 +150,38 @@ namespace market14
         private void populate()
         {
             Con.Open();
-            String qeury = "SELECT * FROM sellersTb1";
+            String qeury = "SELECT * FROM ProductsTbl";
             SqlDataAdapter sda = new SqlDataAdapter(qeury, Con);
-            SqlCommandBuilder sqcb = new SqlCommandBuilder(sda);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            //SellersDVG.DataSource = ds.Tables[0];
+            ProductsDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
-        private void btnLogout_Click(object sender ,EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
             Login login = new Login();
             login.Show();
         }
-        private void btnSelling_Click(object sender , EventArgs e)
+        private void btnSelling_Click(object sender, EventArgs e)
         {
-            Selling_form sell = new Selling_form();
+            Selling_Form sell = new Selling_Form();
             sell.Show();
             this.Hide();
         }
-        private void btnCategories_Click(object sender , EventArgs e)
+        private void btnCategories_Click(object sender, EventArgs e)
         {
-            Category_form Cat = new Category_form();
+            Category_Form Cat = new Category_Form();
             Cat.Show();
             this.Hide();
         }
-       private void btnSellers_Click(object sender ,EventArgs e)
+        private void btnSellers_Click(object sender, EventArgs e)
         {
             Seller_Form sell = new Seller_Form();
             sell.Show();
             this.Hide();
         }
-
     }
 
 

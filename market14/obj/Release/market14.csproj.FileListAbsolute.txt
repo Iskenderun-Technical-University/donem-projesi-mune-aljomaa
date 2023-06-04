@@ -1,0 +1,11 @@
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.csproj.AssemblyReference.cache
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.csproj.SuggestedBindingRedirects.cache
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Category_form.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Form1.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Login.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Product_Form.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Properties.Resources.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Seller_Form.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.Selling_form.resources
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.csproj.GenerateResource.cache
+C:\Users\ibrah\projects\c#\donem-projesi-mune-aljomaa\market14\obj\Release\market14.csproj.CoreCompileInputs.cache
